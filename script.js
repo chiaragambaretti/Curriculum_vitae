@@ -1,21 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const title = document.getElementById('animated-title');
-    const letters = title.textContent.split('');
-    title.textContent = '';
-    
-    letters.forEach((letter, index) => {
-        const span = document.createElement('span');
-        span.textContent = letter;
-        span.classList.add('letter');
-        title.appendChild(span);
-        
-        setTimeout(() => {
-            span.classList.add('visible');
-        }, 100 * index);
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('.scroll-left');
 
     function checkScroll() {

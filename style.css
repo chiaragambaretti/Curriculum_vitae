@@ -5,6 +5,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+p{
+    color: #332F31;
+}
 h2,h3,h4{
     color: purple;
 }
@@ -69,18 +72,13 @@ li{
 }
 h1{
     font-size: 5rem !important;
-    letter-spacing: 15px;
+    font-family: "Playwrite GB S", cursive;
+    color: #332F31;
 }
-.letter{
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.letter.visible{
-    opacity: 1;
-    transform: translateY(0);
+@media (max-width: 767px) {
+    h1 {
+        font-size: 3rem !important;
+    }
 }
 .margin-custom{
     margin-top: -20px;
@@ -88,5 +86,22 @@ h1{
 .p-section-esperienza{
     margin-top: 100px;
     font-size: small;
+}
+.profilo-img{
+    background-image: url(./assest/CHIARAG.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    border-style:double;
+    border-color: white;
+}
+@media (max-width: 767px) {
+    .profilo-img {
+        border-radius: 20%;
+        width: 340px;
+        height: 350px;
+        margin-left: 20px;
+    }
 }
 
