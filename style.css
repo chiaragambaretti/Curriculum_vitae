@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./assest/max-fuchs-Nm6ojlDO-5c-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2,h3,h4{
+    color: purple;
+}
+.left-column {
+    padding: 20px;
+    background-image: url(./assest/jon-tyson-_W4xTX5gNb4-unsplash.jpg);
+}
+.right-column {
+    padding: 20px;
+}
+.section-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.section-content {
+    margin-bottom: 20px;
+}
+.scroll-left{
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.scroll-left.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+.scroll-right{
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.scroll-right.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+a{
+    color: #212529;
+    text-decoration: none;
+}
+a:hover{
+    color: yellow;
+
+}
+
+.fa-brands{
+    color: #212529;
+}
+.fa-brands:hover{
+    color: yellow;
+    font-size: 3rem !important;
+}
+.fa-envelope{
+    color: #212529;
+}
+.fa-envelope:hover{
+    color: yellow;
+    font-size: 3rem !important;
+}
+
+li{
+    list-style-type:square;
+}
+h1{
+    font-size: 5rem !important;
+    letter-spacing: 15px;
+}
+.letter{
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.letter.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+.margin-custom{
+    margin-top: -20px;
+}
+.p-section-esperienza{
+    margin-top: 100px;
+    font-size: small;
+}
+
