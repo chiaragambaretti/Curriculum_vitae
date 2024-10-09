@@ -45,7 +45,7 @@ h2,h3,h4{
 }
 a{
     color: #212529;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 a:hover{
     color: yellow;
@@ -59,6 +59,7 @@ a:hover{
     color: yellow;
     font-size: 3rem !important;
 }
+
 .fa-envelope{
     color: #212529;
 }
