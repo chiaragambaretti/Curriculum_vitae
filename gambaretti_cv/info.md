@@ -1,1 +1,1 @@
-Visualizza su cvgambaretti.netlify.app
+Curriculum Vitae
