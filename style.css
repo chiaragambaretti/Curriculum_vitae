@@ -45,7 +45,7 @@ h2,h3,h4{
 }
 a{
     color: #212529;
-    /* text-decoration: none; */
+    text-decoration: none;
 }
 a:hover{
     color: yellow;
@@ -73,7 +73,7 @@ li{
 }
 h1{
     font-size: 5rem !important;
-    font-family: "Playwrite GB S", cursive;
+    font-family: "Playwrite GB S";
     color: #332F31;
 }
 @media (max-width: 767px) {
