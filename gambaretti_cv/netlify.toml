@@ -1,7 +1,6 @@
 [build]
-  base = "gambaretti_cv"
   publish = "gambaretti_cv"
-  command = "npm run build"
+  command = ""
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "18.17.1"

@@ -1,108 +1,151 @@
-body {
-    font-family: Arial, sans-serif;
-    background-image: url(./assest/max-fuchs-Nm6ojlDO-5c-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+html, body {
+    background-color: #E6E8E2;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
-p{
+
+p {
     color: #332F31;
 }
-h2,h3,h4{
+
+h2, h3, h4 {
     color: purple;
 }
+
+a {
+    color: #212529;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EC5598;
+}
+
+/* Layout colonne */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .left-column {
-    padding: 20px;
-    background-image: url(./assest/jon-tyson-_W4xTX5gNb4-unsplash.jpg);
+    padding: 2%;
+    background-image: url('./assets/jon-tyson-_W4xTX5gNb4-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
 }
+
 .right-column {
-    padding: 20px;
+    padding: 2%;
 }
+
+/* Immagine profilo */
+.profilo-img {
+    background-image: url('./assets/ChiaraGambaretti.jpg');
+    background-size: cover;
+    background-position: top;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border-style: double;
+    border-color: white;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .profilo-img {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        margin-left: 50px;
+    }
+}
+
+/* Sezioni e titoli */
 .section-title {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
+
 .section-content {
     margin-bottom: 20px;
 }
-.scroll-left{
+
+/* Scroll */
+.scroll-left {
     opacity: 0;
     transform: translateX(-20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
-.scroll-left.visible{
+
+.scroll-left.visible {
     opacity: 1;
     transform: translateX(0);
 }
-.scroll-right{
+
+.scroll-right {
     opacity: 0;
     transform: translateX(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
-.scroll-right.visible{
+
+.scroll-right.visible {
     opacity: 1;
     transform: translateX(0);
 }
-a{
-    color: #212529;
-    text-decoration: none;
-}
-a:hover{
-    color: yellow;
 
+/* Icone */
+.fa-brands, .fa-envelope {
+    color: #212529;
+    transition: color 0.3s, font-size 0.3s;
 }
 
-.fa-brands{
-    color: #212529;
-}
-.fa-brands:hover{
-    color: yellow;
+.fa-brands:hover, .fa-envelope:hover {
+    color: #EC5598;
     font-size: 3rem !important;
 }
 
-.fa-envelope{
-    color: #212529;
-}
-.fa-envelope:hover{
-    color: yellow;
-    font-size: 3rem !important;
+/* Liste e titoli */
+li {
+    list-style-type: square;
 }
 
-li{
-    list-style-type:square;
-}
-h1{
+h1 {
     font-size: 5rem !important;
-    font-family: "Playwrite GB S";
+    font-family: "Inter", sans-serif;
     color: #332F31;
+    text-align: center;
 }
+
+.p-section-esperienza {
+    margin-top: 100px;
+    font-size: small;
+}
+
+/* Media queries tablet e mobile */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .left-column, .right-column {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 4rem !important;
+    }
+}
+
 @media (max-width: 767px) {
     h1 {
         font-size: 3rem !important;
     }
-}
-.margin-custom{
-    margin-top: -20px;
-}
-.p-section-esperienza{
-    margin-top: 100px;
-    font-size: small;
-}
-.profilo-img{
-    background-image: url(./assest/CHIARAG.jpg);
-    background-size: cover;
-    border-radius: 50%;
-    width: 350px;
-    height: 350px;
-    border-style:double;
-    border-color: white;
-}
-@media (max-width: 767px) {
-    .profilo-img {
-        border-radius: 20%;
-        width: 340px;
-        height: 350px;
-        margin-left: 20px;
+    .left-column, .right-column {
+        padding: 5%;
     }
 }
 
+/* Centrare i bullet point su smartphone */
+@media (max-width: 767px) {
+    ul {
+        list-style-position: inside; 
+        padding-left: 0;
+        text-align: center; 
+    }
+}
