@@ -1,5 +1,5 @@
 [build]
-  publish = "gambaretti_cv"
+ publish = "CURRICULUM_VITAE/gambaretti_cv"
   command = ""
 
 [build.environment]
