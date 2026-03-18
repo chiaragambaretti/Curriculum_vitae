@@ -1,6 +1,0 @@
-[build]
- publish = "CURRICULUM_VITAE/gambaretti_cv"
-  command = ""
-
-[build.environment]
-  NODE_VERSION = "18.17.1"
